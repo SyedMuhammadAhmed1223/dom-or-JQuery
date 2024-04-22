@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Task List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task List</h1>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Enter your task...">
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+        <ul id="taskList"></ul>
+        <div id="filterOptions">
+            <label><input type="radio" name="filter" value="all" checked> All</label>
+            <label><input type="radio" name="filter" value="completed"> Completed</label>
+            <label><input type="radio" name="filter" value="incomplete"> Incomplete</label>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
